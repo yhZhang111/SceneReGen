@@ -37,8 +37,8 @@ window.PAPER_SITE = {
       label: "arXiv",
       icon: "arxiv",
       iconSrc: "assets/icons/arxiv.svg",
-      url: "#",
-      description: "arXiv link to be added",
+      url: "https://arxiv.org/abs/2608.23930",
+      description: "arXiv preprint",
     },
   ],
   teaser: {
@@ -279,11 +279,14 @@ window.PAPER_SITE = {
   },
   resultsCaption:
     "Quantitative comparison on the 3D-FUTURE evaluation subset. CD-S and F-Score-S measure scene-level geometry, CD-O and F-Score-O measure object-level geometry, and IoUB measures 3D bounding-box alignment. Up and down arrows indicate whether higher or lower values are better, respectively. The best results are in bold, the second-best are underlined.",
-  bibtex: `@inproceedings{sceneregen2026,
-  title     = {SceneReGen: Generative Reconstruction for 3D Scenes},
-  author    = {Author One and Author Two and Author Three and Author Four},
-  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
-  year      = {2026}
+  bibtex: `@misc{tian2026sceneregengenerativereconstruction3d,
+  title         = {SceneReGen: Generative Reconstruction of 3D Scenes from a Single Image},
+  author        = {Zefan Tian and Yuteng Ye and Yiheng Zhang and Yuhang Yang and Xueqiang Lv and Shizhou Zhang and Le Liu and Di Xu},
+  year          = {2026},
+  eprint        = {2608.23930},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  url           = {https://arxiv.org/abs/2608.23930}
 }`,
   footerText: "SceneReGen project page. Update contact, copyright, and acknowledgements here.",
 };
