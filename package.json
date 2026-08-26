@@ -1,0 +1,10 @@
+{
+  "name": "paper-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static research project page scaffold.",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "python -m http.server 8000"
+  }
+}

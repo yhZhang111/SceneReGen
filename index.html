@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Project page for a research paper with teaser, abstract, results, meshes, resources, and BibTeX."
+    />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Paper Project Page</title>
+    <link rel="stylesheet" href="styles.css?v=mesh-hidden-1" />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#top" data-field="shortTitle">Project</a>
+        <div class="nav-links">
+          <a href="#abstract">Abstract</a>
+          <a href="#takeaways">Highlights</a>
+          <a href="#mesh">Mesh</a>
+          <a href="#method">Method</a>
+          <a href="#results">Experiments</a>
+          <a href="#resources">BibTeX</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero-inner">
+          <p class="venue" data-field="venue">Conference / Journal 2026</p>
+          <h1 data-field="title">Paper Title Goes Here</h1>
+          <p class="subtitle" data-field="subtitle">
+            A concise one-sentence summary of the paper contribution.
+          </p>
+
+          <div class="authors" id="authors"></div>
+          <div class="affiliations" id="affiliations"></div>
+
+          <div class="button-row" id="resourceButtons"></div>
+        </div>
+      </section>
+
+      <section class="section teaser-section" aria-label="Teaser">
+        <div class="container">
+          <div class="media-frame" id="teaser"></div>
+          <p class="caption teaser-caption" data-field="teaserCaption">
+            Replace this area with the main teaser image or video.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="abstract" aria-labelledby="abstract-title">
+        <div class="container">
+          <div class="content-panel abstract-panel">
+            <h2 id="abstract-title">Abstract</h2>
+            <p class="abstract-text" data-field="abstract">
+              Add the paper abstract here. Keep the final web version slightly more readable than the PDF
+              abstract if needed, but preserve the technical claims.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section highlight-section" id="takeaways" aria-labelledby="takeaways-title">
+        <div class="container">
+          <div class="content-panel highlight-panel">
+            <h2 id="takeaways-title">Highlights</h2>
+            <p class="highlight-text" id="highlightText"></p>
+            <div class="takeaway-grid" id="takeawaysList"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section band" id="mesh" aria-labelledby="mesh-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="mesh-title">Interactive Mesh</h2>
+          </div>
+          <div class="mesh-layout" id="meshGrid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="method" aria-labelledby="method-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="method-title">Method Overview</h2>
+          </div>
+          <div class="figure-block" id="methodFigure"></div>
+        </div>
+      </section>
+
+      <section class="section band" id="results" aria-labelledby="results-title">
+        <div class="container">
+          <div class="content-panel results-panel">
+            <h2 id="results-title">Experiments</h2>
+            <div class="table-wrap">
+              <table id="resultsTable">
+                <thead></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+          <p class="caption section-caption table-caption" data-field="resultsCaption"></p>
+        </div>
+      </section>
+
+      <section class="section" id="resources" aria-labelledby="bibtex-title">
+        <div class="container">
+          <div class="bibtex-panel">
+            <div class="bibtex-header">
+              <h3 id="bibtex-title">BibTeX</h3>
+              <button class="copy-button" type="button" id="copyBibtex">Copy</button>
+            </div>
+            <pre><code id="bibtex"></code></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span data-field="footerText">Project page template for research dissemination.</span>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="site.config.js?v=mesh-hidden-1"></script>
+    <script src="script.js?v=mesh-hidden-1"></script>
+  </body>
+</html>
